@@ -5,3 +5,7 @@ build_version=0
 splash_color=#000000
 splash_min_time=0
 ui_resolutions=hd
+
+# Channel thumbnails
+mm_icon_focus_hd=pkg:/images/icon_hd.png
+mm_icon_focus_sd=pkg:/images/icon_sd.png
