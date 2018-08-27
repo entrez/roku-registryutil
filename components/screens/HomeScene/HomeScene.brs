@@ -27,6 +27,8 @@ sub MakeDialog()
   dialog.message = "Clear registry section:"
   'Start with just "all" button (currently it still says "all" even if there are no extant sections)
   dialog.buttons = ["All"]
+  dialog.buttonGroup.getChild(0).iconUri = "pkg:/images/icons/delete-uf.png"
+  dialog.buttonGroup.getChild(0).focusedIconUri = "pkg:/images/icons/delete-f.png"
   'Because deleting a button updates the buttonGroup indices but not the number returned by
   'dialog.buttonSelected, this buttonMap list will be a way to enter the buttonSelected
   'number and get the current position of that button in the buttonGroup list.
@@ -37,6 +39,8 @@ sub MakeDialog()
     dialog.buttonGroup.createChild("Button")
     currNum = dialog.buttonGroup.getChildCount() - 1
     dialog.buttonGroup.getChild(currNum).text = sectionName
+    dialog.buttonGroup.getChild(currNum).iconUri = "pkg:/images/icons/delete-uf.png"
+    dialog.buttonGroup.getChild(currNum).focusedIconUri = "pkg:/images/icons/delete-f.png"
     m.buttonMap.Append([ currNum ])
   end for
 

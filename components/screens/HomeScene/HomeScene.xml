@@ -4,4 +4,13 @@
 
 <script type="text/brightscript" uri="pkg:/components/screens/HomeScene/HomeScene.brs" />
 
+<children>
+    <Poster
+      id="Background"
+      translation="[0, 0]"
+      width="1280"
+      height="720"
+      uri="pkg:/images/bg.jpg" />
+</children>
+
 </component>
